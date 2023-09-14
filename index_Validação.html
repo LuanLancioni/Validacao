@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function validarDados() {
+            if (document.getElementById("nome").value == ""){
+                alert("O campo nome está vazio por favor preencha");
+            }
+            if( document.getElementById("endereco").value == "") {
+                alert("O campo endereço está vazio por favor preencha");
+            }
+            if( document.getElementById("bairro").value == "") {
+                alert("O campo bairro está vazio por favor preencha");
+            }
+            if( document.getElementById("Cep").value == "") {
+                alert("O campo CEP está vazio por favor preencha");
+            }
+            if( document.getElementById("Cidade").value == "") {
+                alert("O campo cidade está vazio por favor preencha");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Nome <input type="text" name="nome" id="nome"><br><br>
+        Endereço <input type="text" name="endereco" id="endereco"><br><br>
+        Bairro <input type="text" name="bairro" id="bairro"><br><br>
+        CEP <input type="text" name="Cep" id="Cep"><br><br>
+        Cidade <input type="text" name="Cidade" id="Cidade"><br><br>
+        Estado <select class="form-select" aria-label="Estado">
+            <option selected>Selecione seu Estado</option>
+            <option value="1">SP</option>
+            <option value="2">RJ</option>
+            <option value="3">BA</option>
+            <option value="4">MG</option>
+            <option value="5">AC</option>
+            <option value="6">ES</option>
+        </select><br><br>
+        <button name="cadastrar" id="cadastrar" onclick="validarDados()">cadastrar</button>
+    </form>
+</body>
+</html>
